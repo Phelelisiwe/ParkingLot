@@ -463,9 +463,12 @@ function RegisterPage({ onRegister }) {
       <div className="auth-panel auth-only-panel">
         <div className="auth-card">
           <div className="auth-header-row">
-            <p className="eyebrow">Driver registration</p>
+            <div className="brand-strip">
+              <span className="brand-mark">ParkFlow</span>
+            </div>
             <Link to="/" className="back-link">← Back</Link>
           </div>
+          <p className="eyebrow">Driver registration</p>
           <h2>Create your account</h2>
 
           <form onSubmit={handleSubmit} className="register-form">

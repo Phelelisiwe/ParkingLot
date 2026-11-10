@@ -1,0 +1,19 @@
+.spot {
+  aspect-ratio: 1;
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s;
+  box-shadow: var(--shadow);
+}
+.spot:hover { transform: translateY(-4px); }
+.spot .icon { font-size: 28px; margin-bottom: 6px; }
+.spot .label { font-size: 14px; letter-spacing: 1px; }
+
+.spot.free { background: #DCFCE7; border: 2px solid var(--free); color: #166534; }
+.spot.occupied { background: #FEE2E2; border: 2px solid var(--occupied); color: #991B1B; cursor: not-allowed; }
+.spot.reserved { background: #FEF3C7; border: 2px solid var(--reserved); color: #92400E; cursor: not-allowed; }

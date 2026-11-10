@@ -1,0 +1,21 @@
+.app-header {
+  background: #1E293B;
+  color: white;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.app-header h1 { font-size: 20px; }
+.app-header nav a {
+  color: #CBD5E1;
+  text-decoration: none;
+  margin-left: 24px;
+  font-size: 14px;
+}
+.app-header nav a:hover { color: white; }
+@media (max-width: 640px) {
+  .app-header { padding: 12px 16px; }
+  .app-header nav a { margin-left: 12px; }
+}
+.app-header nav a.active { color: white; font-weight: bold; }

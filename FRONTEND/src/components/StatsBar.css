@@ -1,0 +1,18 @@
+.stats-bar {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.stat {
+  flex: 1;
+  background: var(--surface);
+  padding: 20px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+.stat .num { font-size: 32px; font-weight: 700; }
+.stat .label { color: var(--text-muted); font-size: 14px; margin-top: 4px; }
+.stat.free .num { color: var(--free); }
+.stat.occupied .num { color: var(--occupied); }
+.stat.reserved .num { color: var(--reserved); }
